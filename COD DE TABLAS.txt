@@ -1,0 +1,45 @@
+use panaderia;
+show tables;
+
+CREATE TABLE PERSONAL(
+id_empleado int primary key,
+nombre_empleado varchar(50),
+contraseña_empleado varchar(50)
+);
+SHOW tables;
+CREATE TABLE ADMINISTRADOR(
+id_administrador int primary key,
+nombre_administrador varchar(50),
+contraseña_administrador varchar(50)
+);
+SHOW tables;
+CREATE TABLE INVENTARIOS(
+id_producto int primary key,
+nombre_producto varchar(50),
+valor_producto int(50),
+stock_producto int(50)
+);
+show tables
+CREATE TABLE PRODUCTOS(
+id_producto int primary key,
+nombre_producto varchar(50),
+valor_producto int(50),
+stock_producto int(50)
+);
+show tables
+CREATE TABLE PROVEEDORES(
+id_proveedor int primary key,
+nombre_proveedor varchar(50),
+nit_proveedor int(50),
+telefono_proveedor int(50),
+email_proveedor varchar(100)
+);
+show tables
+
+CREATE TABLE CLIENTE(
+id_cliente int primary key,
+nombre_cliente varchar(50),
+telefono_cliente int(50),
+email_cliente varchar(100)
+);
+SHOW tables
